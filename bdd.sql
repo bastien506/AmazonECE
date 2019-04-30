@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mar. 30 avr. 2019 à 10:09
+-- Généré le :  mar. 30 avr. 2019 à 16:15
 -- Version du serveur :  5.7.24
 -- Version de PHP :  7.2.14
 
@@ -200,7 +200,6 @@ CREATE TABLE IF NOT EXISTS `vendeurs` (
   `Photo` varchar(255) NOT NULL,
   `ImgFond` varchar(255) NOT NULL,
   `Nbitems` int(11) NOT NULL,
-  `Mdp` varchar(255) NOT NULL,
   `Email` varchar(255) NOT NULL,
   PRIMARY KEY (`Login`)
 ) ENGINE=MyISAM AUTO_INCREMENT=12348 DEFAULT CHARSET=latin1;
@@ -209,12 +208,12 @@ CREATE TABLE IF NOT EXISTS `vendeurs` (
 -- Déchargement des données de la table `vendeurs`
 --
 
-INSERT INTO `vendeurs` (`Login`, `Nom`, `Prenom`, `Photo`, `ImgFond`, `Nbitems`, `Mdp`, `Email`) VALUES
-(12346, 'Mama', 'Mia', 'http://ekladata.com/9LaHbob11yqA6Df-8ASu5G15nog@476x600.png', 'https://archzine.fr/wp-content/uploads/2015/08/1-les-plus-beaux-fonds-d-%C3%A9cran-paysage-au-bord-du-lac-et-une-maison-champetre.jpg', 0, 'blup01', 'mamamia@gmail.com'),
-(12347, 'Depp', 'Jonnhy', 'http://ekladata.com/5liZfLTQW8uR-id9x7pZ_ylL3XM@350x522.png', 'https://archzine.fr/wp-content/uploads/2015/08/1-joli-paysage-fond-ecran-ete-avec-une-jolie-pelouse-verte-choisir-un-joli-paysage.jpg', 0, 'blup02', 'jonnhydepp@gmail.com'),
-(12345, 'Baba', 'Ali', 'http://ekladata.com/uUE95nvQ4d-qhGDUd0CqCe4etRs@350x440.png', 'https://i.pinimg.com/originals/cc/5c/d6/cc5cd6785380b973c71474cb4b14fae9.jpg', 0, 'blup03', 'Alibaba@gmail.com'),
-(12344, 'Bond', 'James', 'http://ekladata.com/94vF-zjJDH_qxt7ms-fwzXHtKEE@350x237.png', 'http://gb3e.fr/wp-content/uploads/2018/12/fond-ecran-060215-iphone-20.jpg', 0, 'blup04', 'jb@gmail.com'),
-(12343, 'Michel', 'Eddie', 'http://ekladata.com/IJFMagS-pj1HYG25LvcvBEjc2lk@350x619.png', 'http://www.v3wall.com/wallpaper/1600_1200/1003/1600_1200_20100325122724481243.jpg', 0, 'blup05', 'eddiemichel@gmail.com');
+INSERT INTO `vendeurs` (`Login`, `Nom`, `Prenom`, `Photo`, `ImgFond`, `Nbitems`, `Email`) VALUES
+(12346, 'Mama', 'Mia', 'http://ekladata.com/9LaHbob11yqA6Df-8ASu5G15nog@476x600.png', 'https://archzine.fr/wp-content/uploads/2015/08/1-les-plus-beaux-fonds-d-%C3%A9cran-paysage-au-bord-du-lac-et-une-maison-champetre.jpg', 0, 'mamamia@gmail.com'),
+(12347, 'Depp', 'Jonnhy', 'http://ekladata.com/5liZfLTQW8uR-id9x7pZ_ylL3XM@350x522.png', 'https://archzine.fr/wp-content/uploads/2015/08/1-joli-paysage-fond-ecran-ete-avec-une-jolie-pelouse-verte-choisir-un-joli-paysage.jpg', 0, 'jonnhydepp@gmail.com'),
+(12345, 'Baba', 'Ali', 'http://ekladata.com/uUE95nvQ4d-qhGDUd0CqCe4etRs@350x440.png', 'https://i.pinimg.com/originals/cc/5c/d6/cc5cd6785380b973c71474cb4b14fae9.jpg', 0, 'Alibaba@gmail.com'),
+(12344, 'Bond', 'James', 'http://ekladata.com/94vF-zjJDH_qxt7ms-fwzXHtKEE@350x237.png', 'http://gb3e.fr/wp-content/uploads/2018/12/fond-ecran-060215-iphone-20.jpg', 0, 'jb@gmail.com'),
+(12343, 'Michel', 'Eddie', 'http://ekladata.com/IJFMagS-pj1HYG25LvcvBEjc2lk@350x619.png', 'http://www.v3wall.com/wallpaper/1600_1200/1003/1600_1200_20100325122724481243.jpg', 0, 'eddiemichel@gmail.com');
 
 -- --------------------------------------------------------
 
