@@ -17,7 +17,15 @@ $db_found = mysqli_select_db($db_handle, $database);
 if ($db_found) 
 	{
 		$sql = "SELECT * FROM acheteurs";
-		
+		if ($Nom != "") 
+		{
+		//on cherche le vendeur avec les paramètres pseudo et mdp
+			$sql .= " WHERE Nom LIKE '%$Nom%'";
+			if ($Prenom != "") 
+			{
+				$sql .= " AND Prenom LIKE '%$Prenom%'";
+			}
+		}
 	
 		$result = mysqli_query($db_handle, $sql);
 
